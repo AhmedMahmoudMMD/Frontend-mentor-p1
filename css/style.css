@@ -1,0 +1,204 @@
+/*Start Global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* make a container responsive */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+@media (max-width:767px) {
+    .container {
+        width: 400px;
+        flex-direction: column;
+        margin-top: 140px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .container {
+        width: 800px;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 800px;
+    }
+}
+
+/*End Global rules */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+
+}
+
+.card1,
+.card2 {
+    flex-basis: 50%;
+    flex: 1;
+    padding: 30px;
+}
+
+/*start card1*/
+
+.card1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 20px;
+
+}
+
+.card1 .circle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.card1>h4 {
+    font-size: 20px;
+}
+
+.card1 .circle .your-number,
+.card1 .circle .best-number {
+    width: 100%;
+    text-align: center;
+}
+
+.card1 .circle .your-number {
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    margin: 0;
+}
+
+.card1 .circle .best-number,
+.card1>h4 {
+    color: hsl(0, 0%, 100%);
+    opacity: 50%;
+}
+
+.your-evaluation-word {
+    font-weight: 500;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.card1 .description {
+    margin-top: 0;
+    text-align: center;
+    line-height: 1.6;
+    color: hsl(0, 0%, 100%);
+    opacity: 40%;
+}
+
+/*End card1*/
+
+/*Start card2*/
+
+.title-card2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 23px;
+    margin-bottom: 26px;
+}
+
+.Elements-of-evaluation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Elements-of-evaluation .el {
+    padding: 20px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+
+.Elements-of-evaluation .el span i {
+    margin-right: 10px;
+}
+
+.Elements-of-evaluation .el span:last-child {
+    color: hsl(224, 30%, 27%);
+}
+
+.Elements-of-evaluation .el span:last-child .percentage {
+    opacity: 50%;
+}
+
+
+.Elements-of-evaluation div:nth-child(1) {
+    background-color: hsl(0, 100%, 67%, 0.3);
+    color: hsl(0, 100%, 67%);
+}
+
+.Elements-of-evaluation div:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, 0.3);
+    color: hsl(39, 100%, 56%);
+}
+
+
+.Elements-of-evaluation div:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, 0.3);
+    color: hsl(166, 100%, 37%);
+}
+
+
+.Elements-of-evaluation div:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, 0.3);
+    color: hsl(234, 85%, 45%);
+}
+
+.card2 button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px 25px;
+    background: hsl(224, 30%, 27%);
+    display: block;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+}
+
+.card2 button:active {
+    background: linear-gradient(to top, hsl(241, 81%, 54%) 50%, hsl(252, 100%, 67%))
+}
